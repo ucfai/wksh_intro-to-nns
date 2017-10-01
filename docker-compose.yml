@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  wksh:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        user: "sigai"
+        proj: "intro_to_nns"
+      labels:
+        maintainer: "SIGAI@UCF <ucfsigai@gmail.com>"
+        version:    "0.1.1"
+    image: "bmm-ucf/wksh_intro-to-nns:0.1.1"
+    volumes:
+      - .:/srv/intro_to_nns
+    ports:
+      - 19972:19972

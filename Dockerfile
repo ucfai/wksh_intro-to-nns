@@ -59,4 +59,4 @@ RUN conda install conda=4.3.21 -y \
 
 EXPOSE 19972
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=19972", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=19972", "--allow-root", "--NotebookApp.token="]

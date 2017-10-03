@@ -29,7 +29,6 @@ RUN wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.3.21-Linux-x86
     && rm Miniconda3-4.3.21-Linux-x86_64.sh
 
 ENV PATH /opt/conda/bin:$PATH
-COPY environment.yml /environment.yml
 RUN conda install conda=4.3.21 -y \
     && conda install -c conda-forge -y \
         jupyter_core=4.3.0 \

@@ -16,7 +16,8 @@ coordinators afterwards.
 - **NOTE:** If you've already got `docker` and `docker-compose` on your
 system, then skip to the next section.
 - **NOTE:** Docker requires that macOS users have Yosemite or newer versions.
-- **NOTE:** Docker requires that Windows users have Windows 10 Pro.
+- **NOTE:** Docker requires that Windows users have Windows 10 Pro, Education, 
+    or Enterprise.
 - **NOTE:** If you're ineligible, please attempt downloading Docker Toolbox.
     - If Docker Toolbox is non-functional, then, as a last resort, use
     `conda envs` (detailed below with "Using Anaconda").
@@ -25,7 +26,8 @@ system, then skip to the next section.
 ## Windows
 ### Using Docker
 #### 1. Install Dependencies
-1.  Install [`docker`](https://docs.docker.com/docker-for-windows/install/) (Community Edition is sufficient).
+1.  Install [`docker`](https://docs.docker.com/docker-for-windows/install/) 
+    (Community Edition is sufficient).
 1.  \[Only if installing `docker` doesn't work\]. Install [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/).
 
 #### 2. Getting It Up &amp; Running

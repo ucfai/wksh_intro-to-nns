@@ -29,6 +29,7 @@ RUN wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.3.21-Linux-x86
     && rm Miniconda3-4.3.21-Linux-x86_64.sh
 
 ENV PATH /opt/conda/bin:$PATH
+COPY environment.yml /environment.yml
 RUN conda install conda=4.3.21 -y \
     && conda install -c conda-forge -y \
         jupyter_core=4.3.0 \
@@ -58,4 +59,4 @@ RUN conda install conda=4.3.21 -y \
 
 EXPOSE 19972
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=19972", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=19972", "--allow-root", "--NotebookApp.token="]
